@@ -1,7 +1,15 @@
     <% @comedians.each do |comedian|  %>
     <div class="comedian">
       <h2><%= comedian.name %></h2>
-      <li><%= comedian.age %></li>
+      <li><%= comedian.age %> years old</li>
       <li><%= comedian.city %></li>
+
+      <h3>Their Specials</h3>
+        <% comedian.specials.each do |special| %>
+          <h4><%= special.title%></h4>
+          <ul class="nobull"
+            <li>run time: <%= special.run_time%> minutes</li>
+          </ul>
+          <% end %>
     </div>
     <% end %>
