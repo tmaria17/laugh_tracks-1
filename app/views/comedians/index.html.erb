@@ -1,6 +1,7 @@
     <% @comedians.each do |comedian|  %>
     <div class="comedian">
       <h2><%= comedian.name %></h2>
+      <li style="list-style-type:none"><img src=<%= comedian.photo_url %></li>
       <li><%= comedian.age %> years old</li>
       <li><%= comedian.city %></li>
 
