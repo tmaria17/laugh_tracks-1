@@ -4,6 +4,7 @@
       <li style="list-style-type:none"><img src=<%= comedian.photo_url %></li>
       <li><%= comedian.age %> years old</li>
       <li><%= comedian.city %></li>
+      <li>Special Count: <%=comedian.specials.count %></li>
 
       <h3>Their Specials</h3>
         <% comedian.specials.each do |special| %>
