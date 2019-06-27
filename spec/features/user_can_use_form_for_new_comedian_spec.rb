@@ -19,12 +19,3 @@ describe 'as a user visits the new form' do
     expect(current_path).to eq(comedians_path)
   end
 end
-
-
-# As a visitor
-# When I visit `/comedians/new`
-# Then I see a form to input a new comedian into the database
-# Including fields for their name, age and city.
-# When the form is successfully submitted and saved,
-# Then I am redirected to `/comedians`
-# And I see the new comedian's data on the page.
